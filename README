@@ -12,4 +12,4 @@ Q3: Identify all the differentially expressed (DE) genes between basal-like and 
 
 Q4: Is subtype assocaited with the clinical variables (sex, age, gender and race)? Use a table with p-values to show the results.
 
-Q5: Provide the script/pipeline you used to process raw RNA-seq data with clear annotation for each step.
+Q5: Provide the script/pipeline you used to process raw RNA-seq data (.bcl) with clear annotation for each step.
