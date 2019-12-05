@@ -1,0 +1,15 @@
+- TCGA_PAAD_plus.RData contains 181 PDAC patient samples of RNA-seq data.
+- ex: unlogged TPM values; sampInfo: sample information; featInfo: gene information.
+- Please only consider 150 samples with non-NA sample information in the Grade column for all the analysis.
+- Please submit the code for analysis and result figures.
+- Please push your results as a separate folder with your name to this same repo.
+
+Q1: Perform a consensus clustering for 150 samples using genes in Moffitt-basal25.txt (orange) and Moffitt-classical25.txt (blue). Use K=2 on both columns and rows. Plot a heatmap to show the result. The resultant two clusters of samples are basal-like (orange) and classical (blue) subtypes respectively. 
+
+Q2: Test if each of the genes in AURKA_sig_genes.txt is differentially expressed between basal-like and classical subtypes. Use boxplot to illustrate the results with p-values labeled on the figures.
+
+Q3: Identify all the differentially expressed (DE) genes between basal-like and classical samples using DESeq2 (http://bioconductor.org/packages/devel/bioc/vignettes/DESeq2/inst/doc/DESeq2.html). Plot MA plot and volcano plot to show the results. Cut-offs to use: p=0.05, log2(fold-change)=1.
+
+Q4: Is subtype assocaited with the clinical variables (sex, age, gender and race)? Use a table with p-values to show the results.
+
+Q5: Provide the script/pipeline you used to process raw RNA-seq data with clear annotation for each step.
