@@ -8,7 +8,7 @@ Q1: Perform a consensus clustering for 150 samples using genes in Moffitt-basal2
 
 Q2: Test if each of the genes in AURKA_sig_genes.txt is differentially expressed between basal-like and classical subtypes. Use boxplot to illustrate the results with p-values labeled on the figures.
 
-Q3: Identify all the differentially expressed (DE) genes between basal-like and classical samples using DESeq2 (http://bioconductor.org/packages/devel/bioc/vignettes/DESeq2/inst/doc/DESeq2.html). Plot MA plot and volcano plot to show the results. Cut-offs to use: p=0.05, log2(fold-change)=1.
+Q3: Identify all the differentially expressed (DE) genes between basal-like and classical samples using DESeq2 (http://bioconductor.org/packages/devel/bioc/vignettes/DESeq2/inst/doc/DESeq2.html). Plot MA plot and volcano plot to show the results. Cut-offs to use: p=0.05, log2(fold-change)=1. Read counts are in file TCGA_PAAD_plus.cnt.txt.gz. Patterns of sample ID need to be used to match to samples in .RData.
 
 Q4: Is subtype assocaited with the clinical variables (sex, age, gender and race)? Use a table with p-values to show the results.
 
