@@ -1,15 +1,22 @@
-- TCGA_PAAD_plus.RData contains 181 PDAC patient samples of RNA-seq data.
-- ex: unlogged TPM values; sampInfo: sample information; featInfo: gene information.
-- Please only consider 150 samples with non-NA sample information in the Grade column for all the analysis.
-- Please submit the code for analysis and result figures.
-- Please push your results as a separate folder with your name to this same repo.
+Greetings, I hope the following provides thorough answers to the questions in the mock analysis. There are R scripts that will
+walk you through the details of each analysis, as well as the .RData that can be loaded with the R scripts to run
+through the analyses on your end. I have also included additional files I generated to process the RNA-seq data, which are not
+necessary, unless you want to run through the R scripts on your end. 
 
-Q1: Perform a consensus clustering for 150 samples using genes in Moffitt-basal25.txt (orange) and Moffitt-classical25.txt (blue). Use K=2 for both column and row. Plot a heatmap to show the result. The resultant two clusters of samples are basal-like (orange) and classical (blue) subtypes respectively. 
+The files and their purposes are as follows:
 
-Q2: Test if each of the genes in AURKA_sig_genes.txt is differentially expressed between basal-like and classical subtypes. Use boxplot to illustrate the results with p-values labeled on the figures.
+Q1-4. - The script used to generate the answer to questions 1 through 4 
+Q1-4.RData - The .RData that for questions 1 through 4 
+Q5_DEG_from_raw_files.docx - A detailed explaination that answers question 5 and references Q5_DEG_from_raw_files.R.
+Q5_DEG_from_raw_files.R - The script that is referenced in Q5_DEG_from_raw_files.docx
+Consensus Results - The results of Q1.
+Boxplots.png - The results of Q2
+MA Plot.png - The results of Q3
+Volcano Plot.png - The results of Q3
 
-Q3: Identify all the differentially expressed (DE) genes between basal-like and classical samples using DESeq2 (http://bioconductor.org/packages/devel/bioc/vignettes/DESeq2/inst/doc/DESeq2.html). Plot MA plot and volcano plot to show the results. Cut-offs to use: p=0.05, log2(fold-change)=1. Read counts are in file TCGA_PAAD_plus.cnt.txt.gz. Patterns of sample ID need to be used to match to samples in .RData.
+Additional files:
+data_Moffitt_basal25.csv - A file used in Q1-4.R (In case you want to run throught the script yourself)
+data_Moffitt_classical25.csv - A file used in Q1-4.R (In case you want to run throught the script yourself)
+raw_counts.csv - A file used in Q1-4.R (In case you want to run throught the script yourself)
 
-Q4: Is subtype assocaited with the clinical variables (sex, age, gender and race)? Use a table with p-values to show the results.
 
-Q5: Provide the script/pipeline you used to process raw RNA-seq data (.bcl) with clear annotation for each step.
